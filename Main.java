@@ -17,3 +17,16 @@ class MyClass extends MySuperClass implements YourInterface {
     // field, constructor, and
     // method declarations
 }
+
+
+/*Field declarations are composed of three components, in order:
+
+   1.) Zero or more modifiers, such as public or private.
+   2.) The field's type.
+   3.) The field's name.
+ */ 
+class Bicycle{
+  public int cadence;
+  public int gear;
+  public int speed;
+}
