@@ -10,3 +10,10 @@ class MyClass {
   //   constructor, and 
     // method declarations
 }
+
+/*You can provide more information about the class, such as the name of its superclass, whether it implements any interfaces, and so on, at the start of the class declaration. For example, */ 
+
+class MyClass extends MySuperClass implements YourInterface {
+    // field, constructor, and
+    // method declarations
+}
