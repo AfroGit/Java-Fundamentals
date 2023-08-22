@@ -29,4 +29,51 @@ class Bicycle{
   public int cadence;
   public int gear;
   public int speed;
+  // public modifier—the field is accessible from all classes.
+// private modifier—the field is accessible only within its own class
+}
+
+/* */ 
+
+
+public class Bicycle {
+        //For encapsulation,make fields private.
+  // meaning they can only be directly accessed from the Bicycle class
+    private int cadence;
+    private int gear;
+    private int speed;
+        // We still need access to these values, however. This can be done indirectly by adding public methods that obtain the field values for us:
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+        
+    public int getCadence() {
+        return cadence;
+    }
+        
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+        
+    public int getGear() {
+        return gear;
+    }
+        
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+        
+    public int getSpeed() {
+        return speed;
+    }
+        
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+        
+    public void speedUp(int increment) {
+        speed += increment;
+    }
 }
